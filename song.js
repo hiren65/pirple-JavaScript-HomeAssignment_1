@@ -34,6 +34,18 @@ calling addToMyFevouriteSong function
 addToMyFevouriteSong("michel","Thriller","pop",12,3,true,'eng');
 
 console.log(myFevoriteSongAtributes.artist);
-
+console.log(myFevoriteSongAtributes.genre);
 console.log(myFevoriteSongAtributes.durationInSeconds);
+console.log(myFevoriteSongAtributes.awardsInNumber);
 console.log(myFevoriteSongAtributes.isGrammyAward);
+console.log(myFevoriteSongAtributes.language);
+
+/*
+Now you can also directly chanhe or assigned Atributes
+by assidning variables and calling addToMyFevouriteSong
+following way
+*/
+artist = "Bon Jovie";
+addToMyFevouriteSong(artist,"Thriller","pop",12,3,true,'eng');
+console.log(myFevoriteSongAtributes.artist);
+console.log(artist);
