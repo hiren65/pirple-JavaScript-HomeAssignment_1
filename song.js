@@ -32,7 +32,7 @@ var addToMyFevouriteSong = function(artist,title,genre,durationInSeconds,awardsI
 calling addToMyFevouriteSong function
 */
 addToMyFevouriteSong("michel","Thriller","pop",12,3,true,'eng');
-
+console.log("//////////created Fevourite Song`s atributes calling function //////////////// \n");
 console.log(myFevoriteSongAtributes.artist);
 console.log(myFevoriteSongAtributes.genre);
 console.log(myFevoriteSongAtributes.durationInSeconds);
@@ -46,6 +46,18 @@ by assidning variables and calling addToMyFevouriteSong
 following way
 */
 artist = "Bon Jovie";
-addToMyFevouriteSong(artist,"Thriller","pop",12,3,true,'eng');
-console.log(myFevoriteSongAtributes.artist);
-console.log(artist);
+title = "Buffelo Solder";
+genre = "jazz";
+durationInSeconds = 13;
+awardsInNumber = 5;
+isGrammyAward = true;
+language = "eng";
+console.log("//////////directly calling atribute variables //////////////// \n");
+addToMyFevouriteSong(artist,title,genre,durationInSeconds,awardsInNumber,isGrammyAward,language);
+for (var atribute in myFevoriteSongAtributes){
+
+    console.log(myFevoriteSongAtributes[atribute]);
+    console.log(atribute);
+}
+//console.log(myFevoriteSongAtributes.artist);
+//console.log(artist);
