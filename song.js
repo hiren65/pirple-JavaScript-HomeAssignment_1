@@ -6,11 +6,19 @@ var artist,title,genre,durationInSeconds,awardsInNumber,isGrammyAward,language;
 
 //create object containing all declared variable containing atributes
 var myFevoriteSongAtributes = {
+  //string Input
   artist,
+  //string Input
+  title,
+  //string Input
   genre,
+  //number Input
   durationInSeconds,
+  //number Input
   awardsInNumber,
+  // boolean input
   isGrammyAward,
+  //string input
   language
 };
 var addToMyFevouriteSong = function(artist,title,genre,durationInSeconds,awardsInNumber,isGrammyAward,language){
@@ -22,18 +30,20 @@ var addToMyFevouriteSong = function(artist,title,genre,durationInSeconds,awardsI
    this.isGrammyAward = typeof(isGrammyAward)=="boolean" ? isGrammyAward : isGrammyAward + "input is not in boolean" ;
    this.language = typeof(language)=="string" ? language : languagegit  + "input is not string" ;;
     myFevoriteSongAtributes.artist = this.artist;
+    myFevoriteSongAtributes.title = this.title;
     myFevoriteSongAtributes.genre = this.genre;
     myFevoriteSongAtributes.durationInSeconds = this.durationInSeconds;
     myFevoriteSongAtributes.awardsInNumber = this.awardsInNumber;
     myFevoriteSongAtributes.isGrammyAward = this.isGrammyAward;
     myFevoriteSongAtributes.language = this.language;
-}
+};
 /*you can create your own fevourite song detail by following way of
 calling addToMyFevouriteSong function
 */
 addToMyFevouriteSong("michel","Thriller","pop",12,3,true,'eng');
 console.log("//////////created Fevourite Song`s atributes calling function //////////////// \n");
 console.log(myFevoriteSongAtributes.artist);
+console.log(myFevoriteSongAtributes.title);
 console.log(myFevoriteSongAtributes.genre);
 console.log(myFevoriteSongAtributes.durationInSeconds);
 console.log(myFevoriteSongAtributes.awardsInNumber);
@@ -54,10 +64,8 @@ isGrammyAward = true;
 language = "eng";
 console.log("//////////directly calling atribute variables //////////////// \n");
 addToMyFevouriteSong(artist,title,genre,durationInSeconds,awardsInNumber,isGrammyAward,language);
-for (var atribute in myFevoriteSongAtributes){
-
+console.log(title);
+var i = 0;
+for(var atribute in myFevoriteSongAtributes){
     console.log(myFevoriteSongAtributes[atribute]);
-    console.log(atribute);
 }
-//console.log(myFevoriteSongAtributes.artist);
-//console.log(artist);
