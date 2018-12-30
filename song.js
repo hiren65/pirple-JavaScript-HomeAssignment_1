@@ -14,13 +14,13 @@ var myFevoriteSongAtributes = {
   language
 };
 var addToMyFevouriteSong = function(artist,title,genre,durationInSeconds,awardsInNumber,isGrammyAward,language){
-   this.artist =  typeof(artist)=="string" ? artist : artist + " not string" ;
-   this.title = typeof(title)=="string" ? title : title + " not string" ;
-   this.genre = typeof(genre)=="string" ? genre : genre + " not string" ;
-   this.durationInSeconds = typeof(durationInSeconds) == "number" ? durationInSeconds : durationInSeconds + " not number ";
-   this.awardsInNumber = typeof(awardsInNumber)=="number" ? awardsInNumber : awardsInNumber + " not number" ;
-   this.isGrammyAward = typeof(isGrammyAward)=="boolean" ? isGrammyAward : isGrammyAward + " not in boolean" ;
-   this.language = typeof(language)=="string" ? language : language + " not string" ;;
+   this.artist =  typeof(artist)=="string" ? artist : artist + "input is not string" ;
+   this.title = typeof(title)=="string" ? title : title + "input is not string" ;
+   this.genre = typeof(genre)=="string" ? genre : genre + "input is not string" ;
+   this.durationInSeconds = typeof(durationInSeconds) == "number" ? durationInSeconds : durationInSeconds + "input is not number ";
+   this.awardsInNumber = typeof(awardsInNumber)=="number" ? awardsInNumber : awardsInNumber + "Input is not number" ;
+   this.isGrammyAward = typeof(isGrammyAward)=="boolean" ? isGrammyAward : isGrammyAward + "input is not in boolean" ;
+   this.language = typeof(language)=="string" ? language : languagegit  + "input is not string" ;;
     myFevoriteSongAtributes.artist = this.artist;
     myFevoriteSongAtributes.genre = this.genre;
     myFevoriteSongAtributes.durationInSeconds = this.durationInSeconds;
